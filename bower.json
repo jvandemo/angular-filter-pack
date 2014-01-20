@@ -1,0 +1,44 @@
+{
+    "name"           : "angular-filter-pack",
+    "version"        : "0.1.0",
+    "main"           : [
+        "dist/angular-filter-pack.js"
+    ],
+    "ignore"         : [
+        "src",
+        "test",
+        "Gruntfile.js",
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "bower",
+        "tests"
+    ],
+    "authors"        : [
+        {
+            "name"    : "Jurgen Van de Moere",
+            "email"   : "jurgen.van.de.moere@gmail.com",
+            "homepage": "http://www.jvandemo.com"
+        }
+    ],
+    "repository"     : {
+        "type": "git",
+        "url" : "git://github.com/jvandemo/angular-filter-pack.git"
+    },
+    "dependencies"   : {
+        "angular": "~1.0.8"
+    },
+    "devDependencies": {
+        "angular-mocks"   : "~1.0.8",
+        "angular-scenario": "~1.0.8"
+    },
+    "description"    : "AngularJS Filter Pack",
+    "keywords"       : [
+        "angular",
+        "angularjs",
+        "filter",
+        "filters"
+    ],
+    "license"        : "MIT",
+    "homepage"       : "https://github.com/jvandemo/angular-filter-pack"
+}
