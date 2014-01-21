@@ -10,7 +10,9 @@ module.exports = function (grunt) {
                 src: [
                     'src/angularFilterPack/angularFilterPack.prefix',
                     'src/angularFilterPack/angularFilterPack.js',
+                    'src/angularFilterPack/directives/**/*.js',
                     'src/angularFilterPack/filters/**/*.js',
+                    'src/angularFilterPack/services/**/*.js',
                     'src/angularFilterPack/angularFilterPack.suffix'
                 ],
                 dest: 'dist/angular-filter-pack.js'
@@ -49,7 +51,7 @@ module.exports = function (grunt) {
         },
         watch: {
             options: {
-                livereload: 35728
+                livereload: true
             },
             files: [
                 'Gruntfile.js',
