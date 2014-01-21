@@ -1,11 +1,11 @@
-describe('Slugify filter', function(){
+describe('Dasherize filter', function(){
 
     var filter;
 
     beforeEach(module('angularFilterPack.filters'));
 
     beforeEach(inject(function($filter){
-        filter = $filter('slugify');
+        filter = $filter('dasherize');
     }));
 
     it('should exist', function(){
@@ -16,9 +16,9 @@ describe('Slugify filter', function(){
         expect(filter('hello world')).toBe('hello-world');
     });
 
-    it('should convert to lowercase correctly', function(){
-        expect(filter('helloWorld')).toBe('helloworld');
-        expect(filter('HelloWorld')).toBe('helloworld');
+    it('should convert capitals correctly', function(){
+        expect(filter('helloWorld')).toBe('hello-world');
+        expect(filter('HelloWorld')).toBe('hello-world');
     });
 
 });

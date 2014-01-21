@@ -1,31 +1,4 @@
-(function(window, document) {
-
-// Create all modules and define dependencies to make sure they exist
-// and are loaded in the correct order to satisfy dependency injection
-// before all nested files are concatenated by Grunt
-
-// Config
-angular.module('angularFilterPack.config', []);
-
-// Modules
-angular.module('angularFilterPack.services', []);
-angular.module('angularFilterPack.filters', ['angularFilterPack.services']);
-angular.module('angularFilterPack',
-    [
-        'angularFilterPack.config',
-        'angularFilterPack.services',
-        'angularFilterPack.filters'
-    ]);
-angular.module('angularFilterPack.filters')
-    .filter('dasherize', ['filterPack', function (filterPack) {
-        return filterPack.dasherize;
-    }]);angular.module('angularFilterPack.filters')
-    .filter('slugify', ['filterPack', function (filterPack) {
-        return filterPack.slugify;
-    }]);angular.module('angularFilterPack.filters')
-    .filter('trim', ['filterPack', function (filterPack) {
-        return filterPack.trim;
-    }]);/**
+/**
  * Create one big filterPack service so filters can call each other without
  * having AngularJS dependency injection to instantiate dependant filters.
  */
@@ -139,4 +112,4 @@ angular.module('angularFilterPack.services')
 
         this.$get.$inject = [];
 
-    }]);})(window, document);
+    }]);

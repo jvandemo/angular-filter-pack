@@ -20,7 +20,10 @@ angular.module('yourApp', ['angularFilterPack']);
 
 ### Slugify
 
-Slugifies a string.
+Slugifies a string:
+
+- lowercases the string
+- replaces whitespace a dash
 
 In your view template:
 
@@ -37,6 +40,12 @@ angular.controller('someCtrl', ['slugifyFilter', function(slugify){
 
 }]);
 ```
+
+Examples:
+
+Input | Output
+--- | ---
+Hello world | hello-world
 
 ## Change log
 

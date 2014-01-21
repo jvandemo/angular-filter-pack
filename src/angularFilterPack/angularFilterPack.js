@@ -6,9 +6,11 @@
 angular.module('angularFilterPack.config', []);
 
 // Modules
-angular.module('angularFilterPack.filters', []);
+angular.module('angularFilterPack.services', []);
+angular.module('angularFilterPack.filters', ['angularFilterPack.services']);
 angular.module('angularFilterPack',
     [
         'angularFilterPack.config',
+        'angularFilterPack.services',
         'angularFilterPack.filters'
     ]);
