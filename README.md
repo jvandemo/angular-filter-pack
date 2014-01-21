@@ -1,6 +1,6 @@
 # Filter Pack for AngularJS
 
-Useful filters to add to your AngularJS application.
+Useful filters for your AngularJS application.
 
 ## Installation
 
