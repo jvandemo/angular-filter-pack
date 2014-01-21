@@ -25,19 +25,19 @@ Trims a string:
 - lowercases the string
 - replaces whitespace a dash
 
-Arguments:
+Signature: `trim(input [,characters])`
 
+- *input*: string (in a view template this is the piped expression)
 - *characters*: characters to trim, defaults to whitespace
 
-
-In your view template:
+In a view template:
 
 ```html
 {{ ' hello world ' | trim }}
 {{ '-hello world-' | trim:'-' }}
 ```
 
-In your JavaScript code:
+In JavaScript code:
 
 ```javascript
 angular.controller('someCtrl', ['slugifyFilter', function(slugify){
@@ -57,13 +57,17 @@ Slugifies a string:
 - lowercases the string
 - replaces whitespace a dash
 
-In your view template:
+Signature: `slugify(input)`
+
+- *input*: string (in a view template this is the piped expression)
+
+In a view template:
 
 ```html
 {{ 'hello world' | slugify }}
 ```
 
-In your JavaScript code:
+In JavaScript code:
 
 ```javascript
 angular.controller('someCtrl', ['slugifyFilter', function(slugify){
@@ -86,13 +90,17 @@ Dasherizes a string:
 - leaves existing dashes untouched
 - replaces capitals with dash and lowercase
 
-In your view template:
+Signature: `dasherize(input)`
+
+- *input*: string (in a view template this is the piped expression)
+
+In a view template:
 
 ```html
 {{ 'hello world' | dasherize }}
 ```
 
-In your JavaScript code:
+In JavaScript code:
 
 ```javascript
 angular.controller('someCtrl', ['dasherizeFilter', function(dasherize){
