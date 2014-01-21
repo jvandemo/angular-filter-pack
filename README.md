@@ -1,6 +1,12 @@
 # Filter Pack for AngularJS
 
-Useful filters for your AngularJS application.
+AngularJS filters are awesome and convenient.
+
+Unfortunately AngularJS only contains a few basic filters.
+
+This filter pack conveniently provides your AngularJS application with an additional set of filters.
+
+Lightweight and tested.
 
 ## Installation
 
@@ -113,6 +119,11 @@ angular.controller('someCtrl', ['dasherizeFilter', function(dasherize){
 ```
 
 ## Change log
+
+### v0.2.0
+
+- Added dasherize filter
+- Added trim filter
 
 ### v0.1.0
 
