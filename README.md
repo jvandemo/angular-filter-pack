@@ -1,3 +1,5 @@
+![AngularJS Filter Pack](http://i.imgur.com/fZEGeiw.png)
+
 # Filter Pack for AngularJS
 
 AngularJS filters are awesome and convenient.
