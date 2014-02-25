@@ -1,4 +1,4 @@
-![AngularJS Filter Pack](http://i.imgur.com/fZEGeiw.png)
+![AngularJS Filter Pack](http://i.imgur.com/2m0hcS7.png)
 
 # Filter Pack for AngularJS
 
